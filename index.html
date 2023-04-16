@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
     <title>Survey Form</title>
 </head>
+
 <body>
-    <h1>Non Disclouser Agreement</h1>
-    <form action="#">
-        <h3>Agreement Date</h3>
-        <p>Date</p>
-        <input type="date" name="date" id="date" class="input">
+    <section class="section">
+        <div class="container">
+            <div class="box has-text-white has-background-danger mb-6">
+                <h1 class="title is-1 has-text-white ">Non disclouser Agreement</h1>
+            </div>
+            <div class="columns">
+                <div class="column is-10 is-offset-1 ">
+                    <div class="card">
+                        <div class="card-content has-background-link-light">
+                            <div class="content">
+                                <form class="" action="#">
+                                    <div class="box  has-background-info-light">
+                                        <div class="field">
+                                            <h3>Agreement Date</h3>
+                                            <p class="help">Date</p>
+                                            <div class="control">
+                                                <input type="date" name="date" id="date"
+                                                    class="input is-info has-text-info">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box has-background-info-light">
+                                        <div class="field">
+                                            <h3>Party Name</h3>
+
+                                            <div class="control">
+                                                <input type="text" name="name" placeholder="Your Answer" id="name"
+                                                    class="input  is-info has-text-info">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box  has-background-info-light">
+                                        <div class="field">
+                                            <h3>I Agree</h3>
+                                            <div class="control">
+                                                <input type="checkbox" name="name" placeholder="Your Answer" id="name">
+                                                <span>I Agree</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box has-background-info-light">
+                                        <div class="column is-12 is-flex is-justify-content-space-between ">
+                                            <button type="submit"
+                                                class="button is-primary is-rounded is-medium mx-auto"> Submit </button>
+                                            <button type="reset"
+                                                class="button is-rounded is-dark is-medium mx-auto">Clear Form</button>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
 
 
-        <h3>Party name</h3>
-        <input type="text" name="name" placeholder="Your Answer" id="name">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card">
+                <footer class="card-footer  has-background-danger mt-6  has-text-white">
+                    <div class="card-footer-item"> Created by&nbsp <b><i> Zeeshan Ashir</i></b></div>
+                </footer>
+            </div>
+        </div>
+    </section>
 
 
-        <h3>I Agree</h3>
-        <p>I agree to the terms</p>
-        <input type="checkbox" name="name" placeholder="Your Answer" id="name"> <span>I Agree</span>
-        
-        <button type="submit"> Submit </button>
-        <button type="reset">Clear Form</button>
 
 
-    </form>
 </body>
+
 </html>
